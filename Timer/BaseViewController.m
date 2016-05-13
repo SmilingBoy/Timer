@@ -1,22 +1,24 @@
 //
-//  ViewController.m
+//  BaseViewController.m
 //  Timer
 //
 //  Created by lx on 16/5/13.
 //  Copyright © 2016年 LiZhiqiang. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BaseViewController.h"
 
-@interface ViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_mtime_star.jpg"]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
