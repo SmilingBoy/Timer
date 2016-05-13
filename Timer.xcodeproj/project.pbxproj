@@ -70,7 +70,7 @@
 		E9E1E2851CE56D720029C9AB /* PayTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTicketViewController.m; sourceTree = "<group>"; };
 		E9E1E2871CE56D810029C9AB /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
 		E9E1E2881CE56D810029C9AB /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
-		E9E1E28A1CE577970029C9AB /* ZQPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQPrefix.pch; sourceTree = "<group>"; };
+		E9E1E28B1CE57A240029C9AB /* ZQPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQPrefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,6 @@
 				E9E1E2471CE56A840029C9AB /* LaunchScreen.storyboard */,
 				E9E1E24A1CE56A840029C9AB /* Info.plist */,
 				E9E1E2391CE56A840029C9AB /* Supporting Files */,
-				E9E1E28A1CE577970029C9AB /* ZQPrefix.pch */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -152,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E1E23A1CE56A840029C9AB /* main.m */,
+				E9E1E28B1CE57A240029C9AB /* ZQPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -443,7 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = Timer/ZQprefix.pch;
+				GCC_PREFIX_HEADER = "/Users/lx/Desktop/UI学习/项目一/Timer/Timer/ZQPrefix.pch";
 				INFOPLIST_FILE = Timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiZhiqiang.Timer;
@@ -455,7 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = Timer/ZQprefix.pch;
+				GCC_PREFIX_HEADER = "/Users/lx/Desktop/UI学习/项目一/Timer/Timer/ZQPrefix.pch";
 				INFOPLIST_FILE = Timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiZhiqiang.Timer;
