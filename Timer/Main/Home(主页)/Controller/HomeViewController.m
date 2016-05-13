@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeTabbleViewCell.h"
 #import "HomeModel.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -34,7 +35,6 @@
     [super viewDidLoad];
     
     [self createNavBarItem];
-//    [self createBarbutton];
     
     [self createTableView];
     
@@ -64,18 +64,23 @@
 
     static NSString *reuserIndetiFier = @"cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserIndetiFier];
+    HomeTabbleViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserIndetiFier];
     if (!cell) {
         
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuserIndetiFier];
-        cell.backgroundColor = [UIColor lightGrayColor];
+        cell = [[NSBundle mainBundle] loadNibNamed:@"HomeTabbleViewCell" owner:self options:nil].lastObject;
+        cell.backgroundColor = [UIColor clearColor];
     }
     
     HomeModel *model = _dataList[indexPath.row];
-    cell.textLabel.text = model.titleCn;
+    cell.model = model;
     
     return cell;
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 140;
 }
 
 /**
@@ -100,8 +105,12 @@
             HomeModel *model = [[HomeModel alloc]init];
             
             model.titleCn = [d objectForKey:@"titleCn"];
-            model.titleEn = [d objectForKey:@"titleEn"];
             model.img = [d objectForKey:@"img"];
+            model.titleEn = [d objectForKey:@"titleEn"];
+            model.ratingFinal = [d objectForKey:@"ratingFinal"];
+            model.rYear = [d objectForKey:@"rYear"];
+            model.commonSpecial = [d objectForKey:@"commonSpecial"];
+            
             
             [_dataList addObject:model];
         }
@@ -115,7 +124,6 @@
  *  设置导航栏按钮
  */
 - (void)createNavBarItem{
-    
     //左侧按钮
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setTitle:@"北京" forState:UIControlStateNormal];
@@ -125,30 +133,15 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
     
     //右侧按钮
-    UIButton *rightButton1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    rightButton1.tag = 1001;
-    rightButton1.frame = CGRectMake(0, 0, 49, 25);
-    [rightButton1 setImage:[UIImage imageNamed:@"list_home"] forState:UIControlStateNormal];
-    [rightButton1 setBackgroundImage:[UIImage imageNamed:@"exchange_bg_home"] forState:UIControlStateNormal];
-    [rightButton1 addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    rightButton.frame = CGRectMake(0, 0, 49, 25);
+    [rightButton setBackgroundImage:[UIImage imageNamed:@"exchange_bg_home"] forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"list_home"] forState:UIControlStateNormal];
+    [rightButton setImage:[UIImage imageNamed:@"poster_home"] forState:UIControlStateSelected];
+    [rightButton addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *rightButton2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    rightButton2.tag = 1002;
-    rightButton2.frame = CGRectMake(0, 0, 49, 25);
-    [rightButton2 setImage:[UIImage imageNamed:@"poster_home"] forState:UIControlStateNormal];
-    [rightButton2 setBackgroundImage:[UIImage imageNamed:@"exchange_bg_home"] forState:UIControlStateNormal];
-    [rightButton2 addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    rightButton2.hidden = YES;
-    
-    UIView *view = [[UIView alloc]init];
-    view.frame = CGRectMake(0, 0, 49, 25);
-
-    [view addSubview:rightButton1];
-    [view addSubview:rightButton2];
-    
-    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]initWithCustomView:view];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
 
 }
 
@@ -164,25 +157,11 @@
  */
 - (void)rightButtonClick:(UIButton *)sender{
     
-    UIView *view = self.navigationItem.rightBarButtonItem.customView;
+    sender.selected = !sender.selected;
     
-    sender.hidden = YES;
+    self.navigationController.navigationBar.alpha = sender.selected ? 0.7 : 1;
     
-    if (sender.tag == 1001) {
-        
-        UIButton *btn2 = [view viewWithTag:1002];
-        btn2.hidden = NO;
-        self.navigationController.navigationBar.alpha = 0.7;
-    }
-        
-    if (sender.tag == 1002) {
-        
-        UIButton *btn1 = [view viewWithTag:1001];
-        btn1.hidden = NO;
-        self.navigationController.navigationBar.alpha = 1;
-    }
-    
-    [self flipWithView:view isLeft:sender.tag == 1001 ? YES : NO];
+    [self flipWithView:sender isLeft:sender.selected];
     
 }
 
@@ -198,33 +177,6 @@
     }];
     
 }
-
-#pragma mark -法2
-
-- (void)createBarbutton{
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    button.frame = CGRectMake(0, 0, 49, 25);
-    [button setBackgroundImage:[UIImage imageNamed:@"exchange_bg_home"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"list_home"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"poster_home"] forState:UIControlStateSelected];
-    [button addTarget:self action:@selector(mybuttonClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:button];
-    
-}
-
-- (void)mybuttonClick:(UIButton *)sender{
-    
-    sender.selected = !sender.selected;
-    
-    self.navigationController.navigationBar.alpha = sender.selected ? 0.7 : 1;
-    
-    [self flipWithView:sender isLeft:sender.selected];
-    
-}
-
 
 
 

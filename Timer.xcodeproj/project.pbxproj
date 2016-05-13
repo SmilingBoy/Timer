@@ -16,7 +16,7 @@
 		E9E1E2931CE587870029C9AB /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E28E1CE587870029C9AB /* BaseNavViewController.m */; };
 		E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2901CE587870029C9AB /* BaseTabBarController.m */; };
 		E9E1E2951CE587870029C9AB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2921CE587870029C9AB /* BaseViewController.m */; };
-		E9E1E2A61CE588DA0029C9AB /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2991CE588DA0029C9AB /* DiscoverViewController.m */; };
+		E9E1E2A61CE588DA0029C9AB /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2991CE588DA0029C9AB /* DiscoverViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E29F1CE588DA0029C9AB /* MyInfoViewController.m */; };
 		E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2A21CE588DA0029C9AB /* PayTicketViewController.m */; };
 		E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2A51CE588DA0029C9AB /* StoreViewController.m */; };
@@ -45,6 +45,14 @@
 		E9E1E2D91CE5B7330029C9AB /* 预告.json in Resources */ = {isa = PBXBuildFile; fileRef = E9E1E2C21CE5B7330029C9AB /* 预告.json */; };
 		E9E1E2DE1CE5B7870029C9AB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2DC1CE5B7870029C9AB /* HomeViewController.m */; };
 		E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2E01CE5B7C30029C9AB /* HomeModel.m */; };
+		E9E5C8BD1CE5DBAE009E3F0A /* HomeTabbleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8BB1CE5DBAE009E3F0A /* HomeTabbleViewCell.m */; };
+		E9E5C8BE1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E5C8BC1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib */; };
+		E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8C01CE5DD7B009E3F0A /* RatingImageView.m */; };
+		E9E5C8CF1CE5DEC3009E3F0A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8C41CE5DEC3009E3F0A /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9E5C8D01CE5DEC3009E3F0A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8C81CE5DEC3009E3F0A /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9E5C8D11CE5DEC3009E3F0A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8CB1CE5DEC3009E3F0A /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8CE1CE5DEC3009E3F0A /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8D51CE5E4C2009E3F0A /* UIViewExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +128,26 @@
 		E9E1E2DC1CE5B7870029C9AB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E9E1E2DF1CE5B7C30029C9AB /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		E9E1E2E01CE5B7C30029C9AB /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		E9E5C8BA1CE5DBAE009E3F0A /* HomeTabbleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabbleViewCell.h; sourceTree = "<group>"; };
+		E9E5C8BB1CE5DBAE009E3F0A /* HomeTabbleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabbleViewCell.m; sourceTree = "<group>"; };
+		E9E5C8BC1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTabbleViewCell.xib; sourceTree = "<group>"; };
+		E9E5C8BF1CE5DD7B009E3F0A /* RatingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingImageView.h; sourceTree = "<group>"; };
+		E9E5C8C01CE5DD7B009E3F0A /* RatingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingImageView.m; sourceTree = "<group>"; };
+		E9E5C8C31CE5DEC3009E3F0A /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		E9E5C8C41CE5DEC3009E3F0A /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		E9E5C8C51CE5DEC3009E3F0A /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
+		E9E5C8C61CE5DEC3009E3F0A /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		E9E5C8C71CE5DEC3009E3F0A /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		E9E5C8C81CE5DEC3009E3F0A /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		E9E5C8C91CE5DEC3009E3F0A /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
+		E9E5C8CA1CE5DEC3009E3F0A /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		E9E5C8CB1CE5DEC3009E3F0A /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		E9E5C8CC1CE5DEC3009E3F0A /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
+		E9E5C8CD1CE5DEC3009E3F0A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		E9E5C8CE1CE5DEC3009E3F0A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		E9E5C8D41CE5E4C2009E3F0A /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		E9E5C8D51CE5E4C2009E3F0A /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		E9E5C8D71CE5E4F8009E3F0A /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +198,8 @@
 		E9E1E2381CE56A840029C9AB /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				E9E5C8D31CE5E4AB009E3F0A /* Catagory */,
+				E9E5C8C21CE5DEC3009E3F0A /* SDWebImage */,
 				E9E1E28C1CE587870029C9AB /* Base */,
 				E9E1E2961CE588DA0029C9AB /* Main */,
 				E9E1E2AB1CE5B7330029C9AB /* json资料 */,
@@ -188,6 +218,7 @@
 				E9E1E24A1CE56A840029C9AB /* Info.plist */,
 				E9E1E23A1CE56A840029C9AB /* main.m */,
 				E9E1E28B1CE57A240029C9AB /* ZQPrefix.pch */,
+				E9E5C8D71CE5E4F8009E3F0A /* CommonHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,8 +278,9 @@
 		E9E1E29A1CE588DA0029C9AB /* Home(主页) */ = {
 			isa = PBXGroup;
 			children = (
-				E9E1E2DA1CE5B7870029C9AB /* Controller */,
 				E9E1E2DD1CE5B7870029C9AB /* Model */,
+				E9E5C8B91CE5DB79009E3F0A /* View */,
+				E9E1E2DA1CE5B7870029C9AB /* Controller */,
 			);
 			path = "Home(主页)";
 			sourceTree = "<group>";
@@ -326,6 +358,46 @@
 				E9E1E2E01CE5B7C30029C9AB /* HomeModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E5C8B91CE5DB79009E3F0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5C8BA1CE5DBAE009E3F0A /* HomeTabbleViewCell.h */,
+				E9E5C8BB1CE5DBAE009E3F0A /* HomeTabbleViewCell.m */,
+				E9E5C8BC1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib */,
+				E9E5C8BF1CE5DD7B009E3F0A /* RatingImageView.h */,
+				E9E5C8C01CE5DD7B009E3F0A /* RatingImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9E5C8C21CE5DEC3009E3F0A /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5C8C31CE5DEC3009E3F0A /* SDImageCache.h */,
+				E9E5C8C41CE5DEC3009E3F0A /* SDImageCache.m */,
+				E9E5C8C51CE5DEC3009E3F0A /* SDImageCacheDelegate.h */,
+				E9E5C8C61CE5DEC3009E3F0A /* SDWebImageCompat.h */,
+				E9E5C8C71CE5DEC3009E3F0A /* SDWebImageDownloader.h */,
+				E9E5C8C81CE5DEC3009E3F0A /* SDWebImageDownloader.m */,
+				E9E5C8C91CE5DEC3009E3F0A /* SDWebImageDownloaderDelegate.h */,
+				E9E5C8CA1CE5DEC3009E3F0A /* SDWebImageManager.h */,
+				E9E5C8CB1CE5DEC3009E3F0A /* SDWebImageManager.m */,
+				E9E5C8CC1CE5DEC3009E3F0A /* SDWebImageManagerDelegate.h */,
+				E9E5C8CD1CE5DEC3009E3F0A /* UIImageView+WebCache.h */,
+				E9E5C8CE1CE5DEC3009E3F0A /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		E9E5C8D31CE5E4AB009E3F0A /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				E9E5C8D41CE5E4C2009E3F0A /* UIViewExt.h */,
+				E9E5C8D51CE5E4C2009E3F0A /* UIViewExt.m */,
+			);
+			path = Catagory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +514,7 @@
 				E9E1E2C51CE5B7330029C9AB /* cinema.json in Resources */,
 				E9E1E2D91CE5B7330029C9AB /* 预告.json in Resources */,
 				E9E1E2C81CE5B7330029C9AB /* find_news.json in Resources */,
+				E9E5C8BE1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib in Resources */,
 				E9E1E2C71CE5B7330029C9AB /* criticism.json in Resources */,
 				E9E1E2CA1CE5B7330029C9AB /* home_header.json in Resources */,
 				E9E1E2D41CE5B7330029C9AB /* 捉妖记.mp4 in Resources */,
@@ -481,16 +554,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E1E2951CE587870029C9AB /* BaseViewController.m in Sources */,
+				E9E5C8D11CE5DEC3009E3F0A /* SDWebImageManager.m in Sources */,
+				E9E5C8BD1CE5DBAE009E3F0A /* HomeTabbleViewCell.m in Sources */,
 				E9E1E2A61CE588DA0029C9AB /* DiscoverViewController.m in Sources */,
+				E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */,
+				E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */,
 				E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */,
+				E9E5C8D01CE5DEC3009E3F0A /* SDWebImageDownloader.m in Sources */,
 				E9E1E2DE1CE5B7870029C9AB /* HomeViewController.m in Sources */,
 				E9E1E2931CE587870029C9AB /* BaseNavViewController.m in Sources */,
 				E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */,
 				E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */,
+				E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */,
 				E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */,
 				E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */,
 				E9E1E23B1CE56A840029C9AB /* main.m in Sources */,
 				E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */,
+				E9E5C8CF1CE5DEC3009E3F0A /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +788,7 @@
 				E9E1E2651CE56A840029C9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E1E2661CE56A840029C9AB /* Build configuration list for PBXNativeTarget "TimerTests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +797,7 @@
 				E9E1E2681CE56A840029C9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E1E2691CE56A840029C9AB /* Build configuration list for PBXNativeTarget "TimerUITests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +806,7 @@
 				E9E1E26B1CE56A840029C9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
