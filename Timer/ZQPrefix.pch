@@ -15,4 +15,7 @@
 #import "UIViewExt.h"
 #import "CommonHeader.h"
 
+#import "UIImageView+WebCache.h"
+
+
 #endif /* ZQPrefix_pch */

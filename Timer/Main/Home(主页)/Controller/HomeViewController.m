@@ -9,12 +9,13 @@
 #import "HomeViewController.h"
 #import "HomeTabbleViewCell.h"
 #import "HomeModel.h"
+#import "PosterView.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)NSMutableArray *dataList;
 @property (nonatomic, weak)UITableView *tableView;
-@property (nonatomic, weak)UIView *viewFlip;
+@property (nonatomic, weak)PosterView *viewFlip;
 
 
 
@@ -67,9 +68,10 @@
  */
 - (void)createFlipView{
     
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    view.backgroundColor = [UIColor cyanColor];
+    PosterView *view = [[PosterView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    view.backgroundColor = [UIColor clearColor];
     view.hidden = YES;
+    view.dataList = self.dataList;
     
     _viewFlip = view;
     
@@ -184,8 +186,8 @@
     
     self.navigationController.navigationBar.alpha = sender.selected ? 0.7 : 1;
     
-    _tableView.hidden = sender.selected;
-    _viewFlip.hidden = !sender.selected;
+    _tableView.hidden = !_tableView.hidden;
+    _viewFlip.hidden = !_viewFlip.hidden;
     
     [self flipWithView:sender isLeft:sender.selected];
     [self flipWithView:self.view isLeft:sender.selected];

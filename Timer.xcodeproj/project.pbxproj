@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93337B51CE6CE6D00472496 /* PosterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337B41CE6CE6D00472496 /* PosterView.m */; };
+		E93337BE1CE6D3D500472496 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337BD1CE6D3D500472496 /* BaseCollectionView.m */; };
+		E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337C01CE6D3FE00472496 /* PosterCollectionView.m */; };
 		E9E1E23B1CE56A840029C9AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E23A1CE56A840029C9AB /* main.m */; };
 		E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E23D1CE56A840029C9AB /* AppDelegate.m */; };
 		E9E1E2461CE56A840029C9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E1E2451CE56A840029C9AB /* Assets.xcassets */; };
@@ -73,6 +76,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E93337B31CE6CE6D00472496 /* PosterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterView.h; sourceTree = "<group>"; };
+		E93337B41CE6CE6D00472496 /* PosterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterView.m; sourceTree = "<group>"; };
+		E93337BC1CE6D3D500472496 /* BaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionView.h; sourceTree = "<group>"; };
+		E93337BD1CE6D3D500472496 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
+		E93337BF1CE6D3FE00472496 /* PosterCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCollectionView.h; sourceTree = "<group>"; };
+		E93337C01CE6D3FE00472496 /* PosterCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCollectionView.m; sourceTree = "<group>"; };
 		E9E1E2361CE56A840029C9AB /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E1E23A1CE56A840029C9AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E1E23C1CE56A840029C9AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +184,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E93337B21CE6CE4600472496 /* PosterView */ = {
+			isa = PBXGroup;
+			children = (
+				E93337B31CE6CE6D00472496 /* PosterView.h */,
+				E93337B41CE6CE6D00472496 /* PosterView.m */,
+				E93337BF1CE6D3FE00472496 /* PosterCollectionView.h */,
+				E93337C01CE6D3FE00472496 /* PosterCollectionView.m */,
+			);
+			name = PosterView;
+			sourceTree = "<group>";
+		};
 		E9E1E22D1CE56A840029C9AB = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +270,8 @@
 				E9E1E2901CE587870029C9AB /* BaseTabBarController.m */,
 				E9E1E2911CE587870029C9AB /* BaseViewController.h */,
 				E9E1E2921CE587870029C9AB /* BaseViewController.m */,
+				E93337BC1CE6D3D500472496 /* BaseCollectionView.h */,
+				E93337BD1CE6D3D500472496 /* BaseCollectionView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -363,6 +385,7 @@
 		E9E5C8B91CE5DB79009E3F0A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E93337B21CE6CE4600472496 /* PosterView */,
 				E9E5C8BA1CE5DBAE009E3F0A /* HomeTabbleViewCell.h */,
 				E9E5C8BB1CE5DBAE009E3F0A /* HomeTabbleViewCell.m */,
 				E9E5C8BC1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib */,
@@ -560,7 +583,10 @@
 				E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */,
 				E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */,
 				E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */,
+				E93337B51CE6CE6D00472496 /* PosterView.m in Sources */,
+				E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */,
 				E9E5C8D01CE5DEC3009E3F0A /* SDWebImageDownloader.m in Sources */,
+				E93337BE1CE6D3D500472496 /* BaseCollectionView.m in Sources */,
 				E9E1E2DE1CE5B7870029C9AB /* HomeViewController.m in Sources */,
 				E9E1E2931CE587870029C9AB /* BaseNavViewController.m in Sources */,
 				E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */,
