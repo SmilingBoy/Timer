@@ -13,6 +13,10 @@
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)NSMutableArray *dataList;
+@property (nonatomic, weak)UITableView *tableView;
+@property (nonatomic, weak)UIView *viewFlip;
+
+
 
 @end
 
@@ -38,6 +42,8 @@
     
     [self createTableView];
     
+    [self createFlipView];
+    
 }
 
 /**
@@ -50,7 +56,24 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     
-    [self.view addSubview:tableView];
+    _tableView = tableView;
+    
+    [self.view addSubview:_tableView];
+    
+}
+
+/**
+ *  创建view
+ */
+- (void)createFlipView{
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    view.backgroundColor = [UIColor cyanColor];
+    view.hidden = YES;
+    
+    _viewFlip = view;
+    
+    [self.view addSubview:_viewFlip];
     
 }
 
@@ -161,7 +184,11 @@
     
     self.navigationController.navigationBar.alpha = sender.selected ? 0.7 : 1;
     
+    _tableView.hidden = sender.selected;
+    _viewFlip.hidden = !sender.selected;
+    
     [self flipWithView:sender isLeft:sender.selected];
+    [self flipWithView:self.view isLeft:sender.selected];
     
 }
 
