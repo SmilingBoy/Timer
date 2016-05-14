@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E927A6991CE738B60096420B /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = E927A6971CE738B60096420B /* DetailView.m */; };
+		E927A69A1CE738B60096420B /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E927A6981CE738B60096420B /* DetailView.xib */; };
+		E927A69D1CE73BD50096420B /* PosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E927A69C1CE73BD50096420B /* PosterCell.m */; };
 		E93337B51CE6CE6D00472496 /* PosterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337B41CE6CE6D00472496 /* PosterView.m */; };
 		E93337BE1CE6D3D500472496 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337BD1CE6D3D500472496 /* BaseCollectionView.m */; };
 		E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337C01CE6D3FE00472496 /* PosterCollectionView.m */; };
@@ -76,6 +79,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E927A6961CE738B60096420B /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		E927A6971CE738B60096420B /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		E927A6981CE738B60096420B /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		E927A69B1CE73BD50096420B /* PosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCell.h; sourceTree = "<group>"; };
+		E927A69C1CE73BD50096420B /* PosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCell.m; sourceTree = "<group>"; };
 		E93337B31CE6CE6D00472496 /* PosterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterView.h; sourceTree = "<group>"; };
 		E93337B41CE6CE6D00472496 /* PosterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterView.m; sourceTree = "<group>"; };
 		E93337BC1CE6D3D500472496 /* BaseCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionView.h; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 				E93337B41CE6CE6D00472496 /* PosterView.m */,
 				E93337BF1CE6D3FE00472496 /* PosterCollectionView.h */,
 				E93337C01CE6D3FE00472496 /* PosterCollectionView.m */,
+				E927A69B1CE73BD50096420B /* PosterCell.h */,
+				E927A69C1CE73BD50096420B /* PosterCell.m */,
 			);
 			name = PosterView;
 			sourceTree = "<group>";
@@ -389,6 +399,9 @@
 				E9E5C8BA1CE5DBAE009E3F0A /* HomeTabbleViewCell.h */,
 				E9E5C8BB1CE5DBAE009E3F0A /* HomeTabbleViewCell.m */,
 				E9E5C8BC1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib */,
+				E927A6961CE738B60096420B /* DetailView.h */,
+				E927A6971CE738B60096420B /* DetailView.m */,
+				E927A6981CE738B60096420B /* DetailView.xib */,
 				E9E5C8BF1CE5DD7B009E3F0A /* RatingImageView.h */,
 				E9E5C8C01CE5DD7B009E3F0A /* RatingImageView.m */,
 			);
@@ -526,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E927A69A1CE738B60096420B /* DetailView.xib in Resources */,
 				E9E1E2D51CE5B7330029C9AB /* 明星.json in Resources */,
 				E9E1E2D81CE5B7330029C9AB /* 道士下山.mp4 in Resources */,
 				E9E1E2CD1CE5B7330029C9AB /* news.html in Resources */,
@@ -585,6 +599,7 @@
 				E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */,
 				E93337B51CE6CE6D00472496 /* PosterView.m in Sources */,
 				E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */,
+				E927A6991CE738B60096420B /* DetailView.m in Sources */,
 				E9E5C8D01CE5DEC3009E3F0A /* SDWebImageDownloader.m in Sources */,
 				E93337BE1CE6D3D500472496 /* BaseCollectionView.m in Sources */,
 				E9E1E2DE1CE5B7870029C9AB /* HomeViewController.m in Sources */,
@@ -593,6 +608,7 @@
 				E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */,
 				E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */,
 				E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */,
+				E927A69D1CE73BD50096420B /* PosterCell.m in Sources */,
 				E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */,
 				E9E1E23B1CE56A840029C9AB /* main.m in Sources */,
 				E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */,

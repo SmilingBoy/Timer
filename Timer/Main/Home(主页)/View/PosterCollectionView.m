@@ -7,6 +7,7 @@
 //
 
 #import "PosterCollectionView.h"
+#import "PosterCell.h"
 #import "HomeModel.h"
 
 @implementation PosterCollectionView
@@ -17,7 +18,7 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         //注册单元格
-        [self registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+        [self registerClass:[PosterCell class] forCellWithReuseIdentifier:@"cell"];
         
         self.itemWidth = kScreenWidth - 100;
     }
@@ -26,18 +27,34 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    PosterCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
     
     //获取model
     HomeModel *model = self.dataList[indexPath.row];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
-    [imageView setImageWithURL:[NSURL URLWithString:model.img]];
-    [cell addSubview:imageView];
+    cell.model = model;
     
     
     return cell;
+    
+}
+
+//单元格点击的时候
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    PosterCell *cell = (PosterCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [cell flipViews];
+    
+}
+
+//已经结束显示单元格的时候调用这个方法
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    PosterCell *posterCell = (PosterCell *)cell;
+    
+    [posterCell bringImageView];
+    
     
 }
 
