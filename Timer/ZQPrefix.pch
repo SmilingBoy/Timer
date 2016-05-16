@@ -16,6 +16,7 @@
 #import "CommonHeader.h"
 
 #import "UIImageView+WebCache.h"
+#import "CoreDataFromJson.h"
 
 
 #endif /* ZQPrefix_pch */

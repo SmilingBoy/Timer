@@ -10,6 +10,7 @@
 #import "HomeTabbleViewCell.h"
 #import "HomeModel.h"
 #import "PosterView.h"
+#import "CitiesViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,6 +45,8 @@
     [self createTableView];
     
     [self createFlipView];
+    
+    
     
 }
 
@@ -174,6 +177,18 @@
  *  左侧按钮点击事件
  */
 - (void)leftButtonClick:(UIButton *)sender{
+    
+    CitiesViewController *citiesViewController = [[CitiesViewController alloc]init];
+    
+    [citiesViewController setSelectCity:^(NSString *city) {
+       
+        [sender setTitle:city forState:UIControlStateNormal];
+        
+    }];
+    
+    citiesViewController.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:citiesViewController animated:YES];
     
 }
 

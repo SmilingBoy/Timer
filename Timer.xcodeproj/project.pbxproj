@@ -15,6 +15,9 @@
 		E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337C01CE6D3FE00472496 /* PosterCollectionView.m */; };
 		E943F6EE1CE968D300A5F3E9 /* IndexCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6ED1CE968D300A5F3E9 /* IndexCollectionView.m */; };
 		E943F6F11CE99DF300A5F3E9 /* IndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6F01CE99DF300A5F3E9 /* IndexCell.m */; };
+		E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */; };
+		E943F7021CE9C6A400A5F3E9 /* CitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F7001CE9C6A400A5F3E9 /* CitiesViewController.m */; };
+		E943F7071CE9E4CA00A5F3E9 /* CitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F7061CE9E4CA00A5F3E9 /* CitiesCell.m */; };
 		E9E1E23B1CE56A840029C9AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E23A1CE56A840029C9AB /* main.m */; };
 		E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E23D1CE56A840029C9AB /* AppDelegate.m */; };
 		E9E1E2461CE56A840029C9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E1E2451CE56A840029C9AB /* Assets.xcassets */; };
@@ -96,6 +99,12 @@
 		E943F6ED1CE968D300A5F3E9 /* IndexCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCollectionView.m; sourceTree = "<group>"; };
 		E943F6EF1CE99DF300A5F3E9 /* IndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCell.h; sourceTree = "<group>"; };
 		E943F6F01CE99DF300A5F3E9 /* IndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCell.m; sourceTree = "<group>"; };
+		E943F6F71CE9BE5100A5F3E9 /* CoreDataFromJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataFromJson.h; sourceTree = "<group>"; };
+		E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataFromJson.m; sourceTree = "<group>"; };
+		E943F6FF1CE9C6A400A5F3E9 /* CitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
+		E943F7001CE9C6A400A5F3E9 /* CitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
+		E943F7051CE9E4CA00A5F3E9 /* CitiesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesCell.h; sourceTree = "<group>"; };
+		E943F7061CE9E4CA00A5F3E9 /* CitiesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesCell.m; sourceTree = "<group>"; };
 		E9E1E2361CE56A840029C9AB /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E1E23A1CE56A840029C9AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E1E23C1CE56A840029C9AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,6 +224,15 @@
 			name = PosterView;
 			sourceTree = "<group>";
 		};
+		E943F7041CE9E49C00A5F3E9 /* Cites */ = {
+			isa = PBXGroup;
+			children = (
+				E943F7051CE9E4CA00A5F3E9 /* CitiesCell.h */,
+				E943F7061CE9E4CA00A5F3E9 /* CitiesCell.m */,
+			);
+			name = Cites;
+			sourceTree = "<group>";
+		};
 		E9E1E22D1CE56A840029C9AB = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +310,8 @@
 				E9E1E2921CE587870029C9AB /* BaseViewController.m */,
 				E93337BC1CE6D3D500472496 /* BaseCollectionView.h */,
 				E93337BD1CE6D3D500472496 /* BaseCollectionView.m */,
+				E943F6F71CE9BE5100A5F3E9 /* CoreDataFromJson.h */,
+				E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -389,6 +409,8 @@
 			children = (
 				E9E1E2DB1CE5B7870029C9AB /* HomeViewController.h */,
 				E9E1E2DC1CE5B7870029C9AB /* HomeViewController.m */,
+				E943F6FF1CE9C6A400A5F3E9 /* CitiesViewController.h */,
+				E943F7001CE9C6A400A5F3E9 /* CitiesViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -405,6 +427,7 @@
 		E9E5C8B91CE5DB79009E3F0A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E943F7041CE9E49C00A5F3E9 /* Cites */,
 				E93337B21CE6CE4600472496 /* PosterView */,
 				E9E5C8BA1CE5DBAE009E3F0A /* HomeTabbleViewCell.h */,
 				E9E5C8BB1CE5DBAE009E3F0A /* HomeTabbleViewCell.m */,
@@ -608,6 +631,7 @@
 				E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */,
 				E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */,
 				E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */,
+				E943F7071CE9E4CA00A5F3E9 /* CitiesCell.m in Sources */,
 				E93337B51CE6CE6D00472496 /* PosterView.m in Sources */,
 				E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */,
 				E927A6991CE738B60096420B /* DetailView.m in Sources */,
@@ -616,10 +640,12 @@
 				E9E1E2DE1CE5B7870029C9AB /* HomeViewController.m in Sources */,
 				E9E1E2931CE587870029C9AB /* BaseNavViewController.m in Sources */,
 				E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */,
+				E943F7021CE9C6A400A5F3E9 /* CitiesViewController.m in Sources */,
 				E943F6EE1CE968D300A5F3E9 /* IndexCollectionView.m in Sources */,
 				E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */,
 				E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */,
 				E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */,
+				E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */,
 				E927A69D1CE73BD50096420B /* PosterCell.m in Sources */,
 				E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */,
 				E9E1E23B1CE56A840029C9AB /* main.m in Sources */,
