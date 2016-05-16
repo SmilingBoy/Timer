@@ -43,8 +43,17 @@
 //单元格点击的时候
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    PosterCell *cell = (PosterCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [cell flipViews];
+    if (indexPath.item == self.currentIndex) {
+        
+        PosterCell *cell = (PosterCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        [cell flipViews];
+        
+    } else{
+        
+        [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        
+        self.currentIndex = indexPath.item;
+    }
     
 }
 

@@ -8,10 +8,13 @@
 
 #import "PosterView.h"
 #import "PosterCollectionView.h"
+#import "IndexCollectionView.h"
 
 @interface PosterView ()
 
 @property (nonatomic, weak)PosterCollectionView *posterCollectionView;
+@property (nonatomic, weak)IndexCollectionView *indexCollectionView;
+
 @property (nonatomic, weak)UIImageView *headView;
 @property (nonatomic, weak)UIView *mask;
 
@@ -30,6 +33,7 @@
         [self createMaskView];
         [self headView];
         [self createLight];
+        [self addObserver];
     }
     return self;
 }
@@ -48,12 +52,25 @@
     return _posterCollectionView;
 }
 
+- (IndexCollectionView *)indexCollectionView{
+    
+    if (!_indexCollectionView) {
+        
+        IndexCollectionView *indexCollectionView = [[IndexCollectionView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 120)];
+        _indexCollectionView = indexCollectionView;
+        
+        [self.headView addSubview:_indexCollectionView];
+    }
+    return _indexCollectionView;
+}
+
 - (void)setDataList:(NSArray *)dataList{
     
     
     _dataList = dataList;
     
     self.posterCollectionView.dataList = _dataList;
+    self.indexCollectionView.dataList = _dataList;
     
 }
 
@@ -134,7 +151,33 @@
     
 }
 
+- (void)addObserver{
+    
+    [self.posterCollectionView addObserver:self forKeyPath:@"currentIndex" options:NSKeyValueObservingOptionNew context:nil];
+    [self.indexCollectionView addObserver:self forKeyPath:@"currentIndex" options:NSKeyValueObservingOptionNew context:nil];
+    
+}
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    
+    if ([keyPath isEqualToString:@"currentIndex"]) {
+        
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[[change objectForKey:@"new"] integerValue] inSection:0];
+
+        if ([object isKindOfClass:[PosterCollectionView class]]) {
+            
+            [self.indexCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+            
+        }
+        
+        if ([object isKindOfClass:[IndexCollectionView class]]) {
+            
+            [self.posterCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        }
+        
+    }
+    
+}
 
 
 @end

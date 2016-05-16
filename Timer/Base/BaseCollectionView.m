@@ -62,4 +62,22 @@
     return nil;
 }
 
+/**
+ *  活动结束时调用
+ */
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
+    
+    CGFloat xOffset = targetContentOffset -> x;
+    
+    NSInteger index = xOffset/self.itemWidth;
+    
+    if (index > self.dataList.count - 1) {
+        index = self.dataList.count - 1;
+    }
+    
+    self.currentIndex = index;
+    
+}
+
 @end

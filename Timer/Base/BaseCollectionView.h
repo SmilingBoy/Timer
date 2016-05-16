@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong)NSArray *dataList;
 
-@property (assign)CGFloat itemWidth;
+@property (nonatomic,assign)CGFloat itemWidth;
+
+@property (nonatomic,assign)NSInteger currentIndex;
 
 @end
