@@ -39,6 +39,7 @@
     _model = model;
     
     [_imageView1 setImageWithURL:[NSURL URLWithString:model.img]];
+    _titleLabel.text = model.titleCn;
     
     if ([_model.ratingFinal floatValue]<=0) {
         

@@ -13,6 +13,7 @@
 		E93337B51CE6CE6D00472496 /* PosterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337B41CE6CE6D00472496 /* PosterView.m */; };
 		E93337BE1CE6D3D500472496 /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337BD1CE6D3D500472496 /* BaseCollectionView.m */; };
 		E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E93337C01CE6D3FE00472496 /* PosterCollectionView.m */; };
+		E9379E6F1CEB2D7A00B67065 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9379E6E1CEB2D7A00B67065 /* BaseModel.m */; };
 		E943F6EE1CE968D300A5F3E9 /* IndexCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6ED1CE968D300A5F3E9 /* IndexCollectionView.m */; };
 		E943F6F11CE99DF300A5F3E9 /* IndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6F01CE99DF300A5F3E9 /* IndexCell.m */; };
 		E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */; };
@@ -95,6 +96,8 @@
 		E93337BD1CE6D3D500472496 /* BaseCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
 		E93337BF1CE6D3FE00472496 /* PosterCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCollectionView.h; sourceTree = "<group>"; };
 		E93337C01CE6D3FE00472496 /* PosterCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCollectionView.m; sourceTree = "<group>"; };
+		E9379E6D1CEB2D7A00B67065 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		E9379E6E1CEB2D7A00B67065 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		E943F6EC1CE968D300A5F3E9 /* IndexCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCollectionView.h; sourceTree = "<group>"; };
 		E943F6ED1CE968D300A5F3E9 /* IndexCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexCollectionView.m; sourceTree = "<group>"; };
 		E943F6EF1CE99DF300A5F3E9 /* IndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexCell.h; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 				E93337BD1CE6D3D500472496 /* BaseCollectionView.m */,
 				E943F6F71CE9BE5100A5F3E9 /* CoreDataFromJson.h */,
 				E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */,
+				E9379E6D1CEB2D7A00B67065 /* BaseModel.h */,
+				E9379E6E1CEB2D7A00B67065 /* BaseModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -645,6 +650,7 @@
 				E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */,
 				E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */,
 				E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */,
+				E9379E6F1CEB2D7A00B67065 /* BaseModel.m in Sources */,
 				E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */,
 				E927A69D1CE73BD50096420B /* PosterCell.m in Sources */,
 				E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */,

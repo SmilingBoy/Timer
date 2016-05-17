@@ -12,8 +12,11 @@
 @interface CitiesViewController () <UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
 @property (nonatomic, weak)UITextField *textField;
+@property (nonatomic, weak)UICollectionView *collection;
+
 @property (nonatomic, strong)NSMutableDictionary *sectionDic;
 @property (nonatomic, strong)NSMutableArray *allKeyArray;
+@property (nonatomic, strong)NSArray *allkey;
 @property (nonatomic, strong)NSMutableArray *hotCities;
 @property (nonatomic, strong)NSMutableArray *latestCities;
 
@@ -31,7 +34,31 @@
     
     [self loadData];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldTextChange:) name:UITextFieldTextDidChangeNotification object:nil];
     
+    
+}
+
+- (void)textFieldTextChange:(NSNotification *)notification{
+    
+    NSString *text = self.textField.text;
+    NSString *str = [NSString stringWithFormat:@"SELF LIKE [C] '*%@*'",text];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:str];
+    
+    self.allKeyArray = [NSMutableArray arrayWithArray:[self.allkey filteredArrayUsingPredicate:predicate]];
+    [self.collection reloadData];
+    
+}
+
+- (NSArray *)allkey{
+    
+    if (!_allkey) {
+        
+        _allkey = [NSArray array];
+        _allkey = _allKeyArray;
+    }
+    return _allkey;
 }
 
 - (NSMutableArray *)allKeyArray{
@@ -59,7 +86,7 @@
     
     UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 40)];
     textField.borderStyle = UITextBorderStyleLine;
-    
+    textField.backgroundColor = [UIColor whiteColor];
     _textField = textField;
     [self.view addSubview:_textField];
     
@@ -71,7 +98,7 @@
     layout.headerReferenceSize = CGSizeMake(100, 50);
     
     UICollectionView *collection = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 40, kScreenWidth, kScreenHeight - 40) collectionViewLayout:layout];
-    
+    _collection = collection;
     [self.view addSubview:collection];
     
     collection.delegate = self;
@@ -147,6 +174,7 @@
     }
 }
 
+#pragma mark -UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
     return self.allKeyArray.count ;
@@ -205,6 +233,8 @@
     _textField.text = array[indexPath.row];
     
     self.selectCity(array[indexPath.row]);
+    
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 
