@@ -28,7 +28,6 @@
 		E9E1E2931CE587870029C9AB /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E28E1CE587870029C9AB /* BaseNavViewController.m */; };
 		E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2901CE587870029C9AB /* BaseTabBarController.m */; };
 		E9E1E2951CE587870029C9AB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2921CE587870029C9AB /* BaseViewController.m */; };
-		E9E1E2A61CE588DA0029C9AB /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2991CE588DA0029C9AB /* DiscoverViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E29F1CE588DA0029C9AB /* MyInfoViewController.m */; };
 		E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2A21CE588DA0029C9AB /* PayTicketViewController.m */; };
 		E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2A51CE588DA0029C9AB /* StoreViewController.m */; };
@@ -65,6 +64,11 @@
 		E9E5C8D11CE5DEC3009E3F0A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8CB1CE5DEC3009E3F0A /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8CE1CE5DEC3009E3F0A /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5C8D51CE5E4C2009E3F0A /* UIViewExt.m */; };
+		E9FC3C321CEC01D00090840B /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C311CEC01D00090840B /* SegmentView.m */; };
+		E9FC3C3E1CEC1C050090840B /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C3B1CEC1C050090840B /* DiscoverViewController.m */; };
+		E9FC3C411CEC1C710090840B /* HotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C401CEC1C710090840B /* HotModel.m */; };
+		E9FC3C4C1CEC506D0090840B /* HotMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C4A1CEC506D0090840B /* HotMovieCell.m */; };
+		E9FC3C4D1CEC506D0090840B /* HotMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FC3C4B1CEC506D0090840B /* HotMovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +132,6 @@
 		E9E1E2901CE587870029C9AB /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		E9E1E2911CE587870029C9AB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E9E1E2921CE587870029C9AB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		E9E1E2981CE588DA0029C9AB /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
-		E9E1E2991CE588DA0029C9AB /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		E9E1E29E1CE588DA0029C9AB /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
 		E9E1E29F1CE588DA0029C9AB /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
 		E9E1E2A11CE588DA0029C9AB /* PayTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTicketViewController.h; sourceTree = "<group>"; };
@@ -183,6 +185,15 @@
 		E9E5C8D41CE5E4C2009E3F0A /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		E9E5C8D51CE5E4C2009E3F0A /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		E9E5C8D71CE5E4F8009E3F0A /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		E9FC3C301CEC01D00090840B /* SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
+		E9FC3C311CEC01D00090840B /* SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
+		E9FC3C3A1CEC1C050090840B /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		E9FC3C3B1CEC1C050090840B /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		E9FC3C3F1CEC1C710090840B /* HotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotModel.h; sourceTree = "<group>"; };
+		E9FC3C401CEC1C710090840B /* HotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotModel.m; sourceTree = "<group>"; };
+		E9FC3C491CEC506D0090840B /* HotMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotMovieCell.h; sourceTree = "<group>"; };
+		E9FC3C4A1CEC506D0090840B /* HotMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotMovieCell.m; sourceTree = "<group>"; };
+		E9FC3C4B1CEC506D0090840B /* HotMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotMovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +316,7 @@
 		E9E1E28C1CE587870029C9AB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				E9FC3C2F1CEC01850090840B /* Common */,
 				E9E1E28D1CE587870029C9AB /* BaseNavViewController.h */,
 				E9E1E28E1CE587870029C9AB /* BaseNavViewController.m */,
 				E9E1E28F1CE587870029C9AB /* BaseTabBarController.h */,
@@ -313,8 +325,6 @@
 				E9E1E2921CE587870029C9AB /* BaseViewController.m */,
 				E93337BC1CE6D3D500472496 /* BaseCollectionView.h */,
 				E93337BD1CE6D3D500472496 /* BaseCollectionView.m */,
-				E943F6F71CE9BE5100A5F3E9 /* CoreDataFromJson.h */,
-				E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */,
 				E9379E6D1CEB2D7A00B67065 /* BaseModel.h */,
 				E9379E6E1CEB2D7A00B67065 /* BaseModel.m */,
 			);
@@ -324,22 +334,13 @@
 		E9E1E2961CE588DA0029C9AB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E9E1E2971CE588DA0029C9AB /* Discover(发现) */,
+				E9FC3C381CEC1C050090840B /* Discover(发现) */,
 				E9E1E29A1CE588DA0029C9AB /* Home(主页) */,
 				E9E1E29D1CE588DA0029C9AB /* MyInfo(个人) */,
 				E9E1E2A01CE588DA0029C9AB /* PayTicket(支付) */,
 				E9E1E2A31CE588DA0029C9AB /* Store(商店) */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		E9E1E2971CE588DA0029C9AB /* Discover(发现) */ = {
-			isa = PBXGroup;
-			children = (
-				E9E1E2981CE588DA0029C9AB /* DiscoverViewController.h */,
-				E9E1E2991CE588DA0029C9AB /* DiscoverViewController.m */,
-			);
-			path = "Discover(发现)";
 			sourceTree = "<group>";
 		};
 		E9E1E29A1CE588DA0029C9AB /* Home(主页) */ = {
@@ -474,6 +475,55 @@
 			path = Catagory;
 			sourceTree = "<group>";
 		};
+		E9FC3C2F1CEC01850090840B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E943F6F71CE9BE5100A5F3E9 /* CoreDataFromJson.h */,
+				E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */,
+				E9FC3C301CEC01D00090840B /* SegmentView.h */,
+				E9FC3C311CEC01D00090840B /* SegmentView.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E9FC3C381CEC1C050090840B /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				E9FC3C481CEC506D0090840B /* View */,
+				E9FC3C391CEC1C050090840B /* Controller */,
+				E9FC3C3C1CEC1C050090840B /* Model */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		E9FC3C391CEC1C050090840B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9FC3C3A1CEC1C050090840B /* DiscoverViewController.h */,
+				E9FC3C3B1CEC1C050090840B /* DiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9FC3C3C1CEC1C050090840B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9FC3C3F1CEC1C710090840B /* HotModel.h */,
+				E9FC3C401CEC1C710090840B /* HotModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9FC3C481CEC506D0090840B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9FC3C491CEC506D0090840B /* HotMovieCell.h */,
+				E9FC3C4A1CEC506D0090840B /* HotMovieCell.m */,
+				E9FC3C4B1CEC506D0090840B /* HotMovieCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -577,6 +627,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FC3C4D1CEC506D0090840B /* HotMovieCell.xib in Resources */,
 				E927A69A1CE738B60096420B /* DetailView.xib in Resources */,
 				E9E1E2D51CE5B7330029C9AB /* 明星.json in Resources */,
 				E9E1E2D81CE5B7330029C9AB /* 道士下山.mp4 in Resources */,
@@ -629,15 +680,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E1E2951CE587870029C9AB /* BaseViewController.m in Sources */,
+				E9FC3C411CEC1C710090840B /* HotModel.m in Sources */,
 				E943F6F11CE99DF300A5F3E9 /* IndexCell.m in Sources */,
 				E9E5C8D11CE5DEC3009E3F0A /* SDWebImageManager.m in Sources */,
 				E9E5C8BD1CE5DBAE009E3F0A /* HomeTabbleViewCell.m in Sources */,
-				E9E1E2A61CE588DA0029C9AB /* DiscoverViewController.m in Sources */,
 				E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */,
 				E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */,
 				E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */,
 				E943F7071CE9E4CA00A5F3E9 /* CitiesCell.m in Sources */,
 				E93337B51CE6CE6D00472496 /* PosterView.m in Sources */,
+				E9FC3C321CEC01D00090840B /* SegmentView.m in Sources */,
 				E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */,
 				E927A6991CE738B60096420B /* DetailView.m in Sources */,
 				E9E5C8D01CE5DEC3009E3F0A /* SDWebImageDownloader.m in Sources */,
@@ -647,12 +699,14 @@
 				E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */,
 				E943F7021CE9C6A400A5F3E9 /* CitiesViewController.m in Sources */,
 				E943F6EE1CE968D300A5F3E9 /* IndexCollectionView.m in Sources */,
+				E9FC3C4C1CEC506D0090840B /* HotMovieCell.m in Sources */,
 				E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */,
 				E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */,
 				E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */,
 				E9379E6F1CEB2D7A00B67065 /* BaseModel.m in Sources */,
 				E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */,
 				E927A69D1CE73BD50096420B /* PosterCell.m in Sources */,
+				E9FC3C3E1CEC1C050090840B /* DiscoverViewController.m in Sources */,
 				E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */,
 				E9E1E23B1CE56A840029C9AB /* main.m in Sources */,
 				E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */,
