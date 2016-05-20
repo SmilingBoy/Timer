@@ -19,6 +19,15 @@
 		E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F6F81CE9BE5100A5F3E9 /* CoreDataFromJson.m */; };
 		E943F7021CE9C6A400A5F3E9 /* CitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F7001CE9C6A400A5F3E9 /* CitiesViewController.m */; };
 		E943F7071CE9E4CA00A5F3E9 /* CitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E943F7061CE9E4CA00A5F3E9 /* CitiesCell.m */; };
+		E995A7D71CED4592008B059B /* NewMovieHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E995A7D61CED4592008B059B /* NewMovieHeadView.m */; };
+		E995A7DB1CED49E9008B059B /* AttentMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E995A7D91CED49E9008B059B /* AttentMovieCell.m */; };
+		E995A7DC1CED49E9008B059B /* AttentMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E995A7DA1CED49E9008B059B /* AttentMovieCell.xib */; };
+		E9B4CB3B1CEEBEA10036F07B /* PayTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4CB381CEEBEA10036F07B /* PayTicketViewController.m */; };
+		E9B4CB3E1CEEC3980036F07B /* CinemaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4CB3D1CEEC3980036F07B /* CinemaModel.m */; };
+		E9B4CB421CEEF3320036F07B /* CinemaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4CB401CEEF3320036F07B /* CinemaCell.m */; };
+		E9B4CB431CEEF3320036F07B /* CinemaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B4CB411CEEF3320036F07B /* CinemaCell.xib */; };
+		E9B4CB461CEF00CF0036F07B /* SiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4CB451CEF00CF0036F07B /* SiftView.m */; };
+		E9B4CB491CEF0FA80036F07B /* ZQCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B4CB481CEF0FA80036F07B /* ZQCoverView.m */; };
 		E9E1E23B1CE56A840029C9AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E23A1CE56A840029C9AB /* main.m */; };
 		E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E23D1CE56A840029C9AB /* AppDelegate.m */; };
 		E9E1E2461CE56A840029C9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E1E2451CE56A840029C9AB /* Assets.xcassets */; };
@@ -29,7 +38,6 @@
 		E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2901CE587870029C9AB /* BaseTabBarController.m */; };
 		E9E1E2951CE587870029C9AB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2921CE587870029C9AB /* BaseViewController.m */; };
 		E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E29F1CE588DA0029C9AB /* MyInfoViewController.m */; };
-		E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2A21CE588DA0029C9AB /* PayTicketViewController.m */; };
 		E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E1E2A51CE588DA0029C9AB /* StoreViewController.m */; };
 		E9E1E2C31CE5B7330029C9AB /* buy_new.json in Resources */ = {isa = PBXBuildFile; fileRef = E9E1E2AC1CE5B7330029C9AB /* buy_new.json */; };
 		E9E1E2C41CE5B7330029C9AB /* buy_now.json in Resources */ = {isa = PBXBuildFile; fileRef = E9E1E2AD1CE5B7330029C9AB /* buy_now.json */; };
@@ -69,6 +77,9 @@
 		E9FC3C411CEC1C710090840B /* HotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C401CEC1C710090840B /* HotModel.m */; };
 		E9FC3C4C1CEC506D0090840B /* HotMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C4A1CEC506D0090840B /* HotMovieCell.m */; };
 		E9FC3C4D1CEC506D0090840B /* HotMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FC3C4B1CEC506D0090840B /* HotMovieCell.xib */; };
+		E9FC3C551CEC845B0090840B /* NewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C541CEC845B0090840B /* NewModel.m */; };
+		E9FC3C591CEC89570090840B /* NewMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC3C571CEC89570090840B /* NewMovieCell.m */; };
+		E9FC3C5A1CEC89570090840B /* NewMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FC3C581CEC89570090840B /* NewMovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +123,22 @@
 		E943F7001CE9C6A400A5F3E9 /* CitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
 		E943F7051CE9E4CA00A5F3E9 /* CitiesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesCell.h; sourceTree = "<group>"; };
 		E943F7061CE9E4CA00A5F3E9 /* CitiesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesCell.m; sourceTree = "<group>"; };
+		E995A7D51CED4592008B059B /* NewMovieHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMovieHeadView.h; sourceTree = "<group>"; };
+		E995A7D61CED4592008B059B /* NewMovieHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMovieHeadView.m; sourceTree = "<group>"; };
+		E995A7D81CED49E9008B059B /* AttentMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttentMovieCell.h; sourceTree = "<group>"; };
+		E995A7D91CED49E9008B059B /* AttentMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttentMovieCell.m; sourceTree = "<group>"; };
+		E995A7DA1CED49E9008B059B /* AttentMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttentMovieCell.xib; sourceTree = "<group>"; };
+		E9B4CB371CEEBEA10036F07B /* PayTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTicketViewController.h; sourceTree = "<group>"; };
+		E9B4CB381CEEBEA10036F07B /* PayTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTicketViewController.m; sourceTree = "<group>"; };
+		E9B4CB3C1CEEC3980036F07B /* CinemaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaModel.h; sourceTree = "<group>"; };
+		E9B4CB3D1CEEC3980036F07B /* CinemaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaModel.m; sourceTree = "<group>"; };
+		E9B4CB3F1CEEF3320036F07B /* CinemaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaCell.h; sourceTree = "<group>"; };
+		E9B4CB401CEEF3320036F07B /* CinemaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaCell.m; sourceTree = "<group>"; };
+		E9B4CB411CEEF3320036F07B /* CinemaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CinemaCell.xib; sourceTree = "<group>"; };
+		E9B4CB441CEF00CF0036F07B /* SiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiftView.h; sourceTree = "<group>"; };
+		E9B4CB451CEF00CF0036F07B /* SiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiftView.m; sourceTree = "<group>"; };
+		E9B4CB471CEF0FA80036F07B /* ZQCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQCoverView.h; sourceTree = "<group>"; };
+		E9B4CB481CEF0FA80036F07B /* ZQCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQCoverView.m; sourceTree = "<group>"; };
 		E9E1E2361CE56A840029C9AB /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E1E23A1CE56A840029C9AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E1E23C1CE56A840029C9AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,8 +161,6 @@
 		E9E1E2921CE587870029C9AB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E9E1E29E1CE588DA0029C9AB /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
 		E9E1E29F1CE588DA0029C9AB /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
-		E9E1E2A11CE588DA0029C9AB /* PayTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTicketViewController.h; sourceTree = "<group>"; };
-		E9E1E2A21CE588DA0029C9AB /* PayTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTicketViewController.m; sourceTree = "<group>"; };
 		E9E1E2A41CE588DA0029C9AB /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
 		E9E1E2A51CE588DA0029C9AB /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
 		E9E1E2AC1CE5B7330029C9AB /* buy_new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buy_new.json; sourceTree = "<group>"; };
@@ -194,6 +219,11 @@
 		E9FC3C491CEC506D0090840B /* HotMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotMovieCell.h; sourceTree = "<group>"; };
 		E9FC3C4A1CEC506D0090840B /* HotMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotMovieCell.m; sourceTree = "<group>"; };
 		E9FC3C4B1CEC506D0090840B /* HotMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotMovieCell.xib; sourceTree = "<group>"; };
+		E9FC3C531CEC845B0090840B /* NewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewModel.h; sourceTree = "<group>"; };
+		E9FC3C541CEC845B0090840B /* NewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewModel.m; sourceTree = "<group>"; };
+		E9FC3C561CEC89570090840B /* NewMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMovieCell.h; sourceTree = "<group>"; };
+		E9FC3C571CEC89570090840B /* NewMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMovieCell.m; sourceTree = "<group>"; };
+		E9FC3C581CEC89570090840B /* NewMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewMovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +275,38 @@
 				E943F7061CE9E4CA00A5F3E9 /* CitiesCell.m */,
 			);
 			name = Cites;
+			sourceTree = "<group>";
+		};
+		E9B4CB361CEEBEA10036F07B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4CB371CEEBEA10036F07B /* PayTicketViewController.h */,
+				E9B4CB381CEEBEA10036F07B /* PayTicketViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B4CB391CEEBEA10036F07B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4CB3C1CEEC3980036F07B /* CinemaModel.h */,
+				E9B4CB3D1CEEC3980036F07B /* CinemaModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9B4CB3A1CEEBEA10036F07B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9B4CB471CEF0FA80036F07B /* ZQCoverView.h */,
+				E9B4CB481CEF0FA80036F07B /* ZQCoverView.m */,
+				E9B4CB3F1CEEF3320036F07B /* CinemaCell.h */,
+				E9B4CB401CEEF3320036F07B /* CinemaCell.m */,
+				E9B4CB411CEEF3320036F07B /* CinemaCell.xib */,
+				E9B4CB441CEF00CF0036F07B /* SiftView.h */,
+				E9B4CB451CEF00CF0036F07B /* SiftView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9E1E22D1CE56A840029C9AB = {
@@ -365,8 +427,9 @@
 		E9E1E2A01CE588DA0029C9AB /* PayTicket(支付) */ = {
 			isa = PBXGroup;
 			children = (
-				E9E1E2A11CE588DA0029C9AB /* PayTicketViewController.h */,
-				E9E1E2A21CE588DA0029C9AB /* PayTicketViewController.m */,
+				E9B4CB361CEEBEA10036F07B /* Controller */,
+				E9B4CB391CEEBEA10036F07B /* Model */,
+				E9B4CB3A1CEEBEA10036F07B /* View */,
 			);
 			path = "PayTicket(支付)";
 			sourceTree = "<group>";
@@ -510,6 +573,8 @@
 			children = (
 				E9FC3C3F1CEC1C710090840B /* HotModel.h */,
 				E9FC3C401CEC1C710090840B /* HotModel.m */,
+				E9FC3C531CEC845B0090840B /* NewModel.h */,
+				E9FC3C541CEC845B0090840B /* NewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -520,6 +585,14 @@
 				E9FC3C491CEC506D0090840B /* HotMovieCell.h */,
 				E9FC3C4A1CEC506D0090840B /* HotMovieCell.m */,
 				E9FC3C4B1CEC506D0090840B /* HotMovieCell.xib */,
+				E9FC3C561CEC89570090840B /* NewMovieCell.h */,
+				E9FC3C571CEC89570090840B /* NewMovieCell.m */,
+				E9FC3C581CEC89570090840B /* NewMovieCell.xib */,
+				E995A7D51CED4592008B059B /* NewMovieHeadView.h */,
+				E995A7D61CED4592008B059B /* NewMovieHeadView.m */,
+				E995A7D81CED49E9008B059B /* AttentMovieCell.h */,
+				E995A7D91CED49E9008B059B /* AttentMovieCell.m */,
+				E995A7DA1CED49E9008B059B /* AttentMovieCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -635,9 +708,11 @@
 				E9E1E2CE1CE5B7330029C9AB /* newsDetail1.json in Resources */,
 				E9E1E2C61CE5B7330029C9AB /* cities.json in Resources */,
 				E9E1E2491CE56A840029C9AB /* LaunchScreen.storyboard in Resources */,
+				E995A7DC1CED49E9008B059B /* AttentMovieCell.xib in Resources */,
 				E9E1E2CF1CE5B7330029C9AB /* newsDetail2.json in Resources */,
 				E9E1E2D61CE5B7330029C9AB /* 蚁人.mp4 in Resources */,
 				E9E1E2C51CE5B7330029C9AB /* cinema.json in Resources */,
+				E9B4CB431CEEF3320036F07B /* CinemaCell.xib in Resources */,
 				E9E1E2D91CE5B7330029C9AB /* 预告.json in Resources */,
 				E9E1E2C81CE5B7330029C9AB /* find_news.json in Resources */,
 				E9E5C8BE1CE5DBAE009E3F0A /* HomeTabbleViewCell.xib in Resources */,
@@ -645,6 +720,7 @@
 				E9E1E2CA1CE5B7330029C9AB /* home_header.json in Resources */,
 				E9E1E2D41CE5B7330029C9AB /* 捉妖记.mp4 in Resources */,
 				E9E1E2461CE56A840029C9AB /* Assets.xcassets in Resources */,
+				E9FC3C5A1CEC89570090840B /* NewMovieCell.xib in Resources */,
 				E9E1E2D21CE5B7330029C9AB /* rank2.json in Resources */,
 				E9E1E2D01CE5B7330029C9AB /* outher.json in Resources */,
 				E9E1E2CB1CE5B7330029C9AB /* home_hot.json in Resources */,
@@ -683,12 +759,14 @@
 				E9FC3C411CEC1C710090840B /* HotModel.m in Sources */,
 				E943F6F11CE99DF300A5F3E9 /* IndexCell.m in Sources */,
 				E9E5C8D11CE5DEC3009E3F0A /* SDWebImageManager.m in Sources */,
+				E9B4CB461CEF00CF0036F07B /* SiftView.m in Sources */,
 				E9E5C8BD1CE5DBAE009E3F0A /* HomeTabbleViewCell.m in Sources */,
 				E9E5C8D61CE5E4C2009E3F0A /* UIViewExt.m in Sources */,
 				E9E5C8D21CE5DEC3009E3F0A /* UIImageView+WebCache.m in Sources */,
 				E9E1E2A81CE588DA0029C9AB /* MyInfoViewController.m in Sources */,
 				E943F7071CE9E4CA00A5F3E9 /* CitiesCell.m in Sources */,
 				E93337B51CE6CE6D00472496 /* PosterView.m in Sources */,
+				E9B4CB3E1CEEC3980036F07B /* CinemaModel.m in Sources */,
 				E9FC3C321CEC01D00090840B /* SegmentView.m in Sources */,
 				E93337C11CE6D3FE00472496 /* PosterCollectionView.m in Sources */,
 				E927A6991CE738B60096420B /* DetailView.m in Sources */,
@@ -699,17 +777,23 @@
 				E9E1E2AA1CE588DA0029C9AB /* StoreViewController.m in Sources */,
 				E943F7021CE9C6A400A5F3E9 /* CitiesViewController.m in Sources */,
 				E943F6EE1CE968D300A5F3E9 /* IndexCollectionView.m in Sources */,
+				E995A7D71CED4592008B059B /* NewMovieHeadView.m in Sources */,
+				E9B4CB421CEEF3320036F07B /* CinemaCell.m in Sources */,
 				E9FC3C4C1CEC506D0090840B /* HotMovieCell.m in Sources */,
+				E9B4CB3B1CEEBEA10036F07B /* PayTicketViewController.m in Sources */,
 				E9E1E2941CE587870029C9AB /* BaseTabBarController.m in Sources */,
+				E9FC3C551CEC845B0090840B /* NewModel.m in Sources */,
+				E995A7DB1CED49E9008B059B /* AttentMovieCell.m in Sources */,
+				E9B4CB491CEF0FA80036F07B /* ZQCoverView.m in Sources */,
 				E9E5C8C11CE5DD7B009E3F0A /* RatingImageView.m in Sources */,
 				E9E1E23E1CE56A840029C9AB /* AppDelegate.m in Sources */,
 				E9379E6F1CEB2D7A00B67065 /* BaseModel.m in Sources */,
 				E943F6F91CE9BE5100A5F3E9 /* CoreDataFromJson.m in Sources */,
+				E9FC3C591CEC89570090840B /* NewMovieCell.m in Sources */,
 				E927A69D1CE73BD50096420B /* PosterCell.m in Sources */,
 				E9FC3C3E1CEC1C050090840B /* DiscoverViewController.m in Sources */,
 				E9E1E2E11CE5B7C30029C9AB /* HomeModel.m in Sources */,
 				E9E1E23B1CE56A840029C9AB /* main.m in Sources */,
-				E9E1E2A91CE588DA0029C9AB /* PayTicketViewController.m in Sources */,
 				E9E5C8CF1CE5DEC3009E3F0A /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

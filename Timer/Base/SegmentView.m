@@ -53,6 +53,8 @@
 
 - (void)setButtonClick:(UIButton *)sender{
     
+    self.segmentBlock(sender.tag - 100);
+    
     if (sender == _selButton) {
         return;
     }
@@ -70,7 +72,7 @@
         _selImageView.frame = CGRectMake((sender.tag - 100) * kButtonWidth, self.frame.size.height - 2, self.frame.size.width/self.titleArray.count, 2);
     }];
     
-    self.segmentBlock(sender.tag - 100);
+
     
 }
 
