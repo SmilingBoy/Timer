@@ -10,6 +10,10 @@
 #import "NewModel.h"
 #import "NewsCell.h"
 
+#import "UIView+ViewController.h"
+#import "VideoViewController.h"
+#import "NewsTableViewController.h"
+
 @interface NewsView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, weak)UITableView *tableView;
@@ -47,7 +51,7 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     
-    tableView.backgroundColor = [UIColor clearColor];
+    tableView.backgroundColor = [UIColor whiteColor];
     
     _tableView = tableView;
     
@@ -96,6 +100,29 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return 150;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    VideoViewController *video = [[VideoViewController alloc] init];
+    video.hidesBottomBarWhenPushed = YES;
+    
+    NewsTableViewController *news = [[NewsTableViewController alloc] init];
+    
+    NewsModel *model = _datalist[indexPath.row];
+    
+    if ([model.type intValue] == 2) {
+        
+        video.url = @"https://www.baidu.com/";
+        
+        [self.viewController.navigationController pushViewController:video animated:YES];
+        
+    }else{
+        
+        [self.viewController.navigationController pushViewController:news animated:YES];
+        
+    }
+    
 }
 
 

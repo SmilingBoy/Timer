@@ -54,7 +54,7 @@
                 <outlet property="publishTimeLabel2" destination="cK4-K0-MTX" id="yK6-B5-GF9"/>
                 <outlet property="titleLabel2" destination="qcz-bf-Crg" id="zxd-Sv-TTh"/>
             </connections>
-            <point key="canvasLocation" x="266" y="512"/>
+            <point key="canvasLocation" x="148" y="244"/>
         </tableViewCell>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="150" id="KGk-i7-Jjw" customClass="NewsCell">
             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
@@ -100,7 +100,7 @@
                 <outlet property="summaryInfoLabel1" destination="RNV-SK-JWY" id="Dmt-pp-EZU"/>
                 <outlet property="summaryLabel1" destination="xjW-d5-JaT" id="qFS-10-iUd"/>
             </connections>
-            <point key="canvasLocation" x="266" y="253"/>
+            <point key="canvasLocation" x="148" y="487"/>
         </tableViewCell>
     </objects>
 </document>

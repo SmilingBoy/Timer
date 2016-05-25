@@ -1,9 +1,9 @@
 //
 //  NewsModel.h
-//  Timer
+//  MTime
 //
-//  Created by lx on 16/5/21.
-//  Copyright © 2016年 LiZhiqiang. All rights reserved.
+//  Created by 孙 峰 on 15/9/23.
+//  Copyright (c) 2015年 SunFeng. All rights reserved.
 //
 
 #import "BaseModel.h"
@@ -15,6 +15,7 @@
 @property (nonatomic,copy)NSArray *images;
 
 @property(nonatomic,retain)NSNumber *publishTime,*commentCount,*type;
+
 
 
 @end

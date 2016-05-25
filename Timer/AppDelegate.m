@@ -10,6 +10,9 @@
 #import "BaseTabBarController.h"
 #import "BaseNavViewController.h"
 
+#import "FirstViewController.h"
+#import "MainViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,23 +25,21 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    NSArray *viewControllerArray = @[@"Home",@"Discover",@"PayTicket",@"Store",@"MyInfo"];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    NSMutableArray *viewControllers = [NSMutableArray array];
-    for (NSString *str in viewControllerArray) {
+    BOOL mark = [userDefaults boolForKey:@"isFrist"];
+    
+    if (mark == NO) {
         
-        NSString *viewControllerName = [NSString stringWithFormat:@"%@ViewController",str];
+        [userDefaults setBool:YES forKey:@"isFrist"];
         
-        UIViewController *viewController = [[NSClassFromString(viewControllerName) alloc]init];
+        self.window.rootViewController = [[FirstViewController alloc] init];
         
-        BaseNavViewController *baseNC = [[BaseNavViewController alloc]initWithRootViewController:viewController];
+    }else{
         
-        [viewControllers addObject:baseNC];
+        self.window.rootViewController = [[MainViewController alloc] init];
+        
     }
-
-    BaseTabBarController *tabBar = [[BaseTabBarController alloc]init];
-    tabBar.viewControllers = viewControllers;
-    self.window.rootViewController = tabBar;
     
     return YES;
 }

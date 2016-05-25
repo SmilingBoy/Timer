@@ -8,14 +8,36 @@
 
 #import "StoreViewController.h"
 #import "SegmentView.h"
+
 #import "NewsModel.h"
+#import "NoticeModel.h"
+#import "ChartsModel.h"
+#import "CriticismModel.h"
+
 #import "NewsView.h"
+#import "NoticeView.h"
+#import "ChartsView.h"
+#import "CommentView.h"
+
 
 @interface StoreViewController ()
 
-@property (nonatomic, strong)NSMutableArray *dataList;
-@property (nonatomic, weak)NewsView *newsView;
 
+@property (nonatomic, weak)SegmentView *segmentView;
+
+
+@property (nonatomic, weak)NewsView *newsView;
+@property (nonatomic, weak)NoticeView *noticeView;
+@property (nonatomic, weak)ChartsView *chartsView;
+@property (nonatomic, weak)CommentView *commentView;
+
+
+
+
+@property (nonatomic, strong)NSMutableArray *dataList;
+@property (nonatomic, strong)NSMutableArray *datalist2;
+@property (nonatomic, strong)NSMutableArray *datalist3;
+@property (nonatomic, strong)NSMutableArray *datalist4;
 
 @end
 
@@ -40,7 +62,7 @@
     
     [self setUpSegmentView];
     
-    [self setUpNewsView];
+    [self setUpView];
     
 }
 
@@ -52,9 +74,43 @@
     
     [segmentView setSegmentBlock:^(NSInteger index) {
         
+        [self pushAction:index];
+        
     }];
     
+    _segmentView = segmentView;
+    
     self.navigationItem.titleView = segmentView;
+    
+}
+
+- (void)pushAction:(NSInteger)index{
+    
+    switch (index) {
+        case 0:
+            
+            [self.view bringSubviewToFront:_newsView];
+            
+            break;
+        case 1:
+            
+            [self.view bringSubviewToFront:_noticeView];
+            
+            break;
+        case 2:
+            
+            [self.view bringSubviewToFront:_chartsView];
+            
+            break;
+        case 3:
+            
+            [self.view bringSubviewToFront:_commentView];
+            
+            break;
+            
+        default:
+            break;
+    }
     
 }
 
@@ -79,7 +135,72 @@
     return _dataList;
 }
 
-- (void)setUpNewsView{
+- (NSMutableArray *)datalist2{
+    
+    if (!_datalist2) {
+        
+        _datalist2 = [NSMutableArray array];
+        
+        NSDictionary *dic = [CoreDataFromJson jsonObjectFromFileName:@"预告"];
+        
+        NSArray *array = [dic objectForKey:@"trailers"];
+        
+        for (NSDictionary *d in array) {
+            
+            NoticeModel *model = [[NoticeModel alloc] initWithDic:d];
+            
+            [_datalist2 addObject:model];
+        }
+        
+    }
+    return _datalist2;
+    
+}
+
+- (NSMutableArray *)datalist3{
+    
+    if (!_datalist3) {
+        
+        _datalist3 = [NSMutableArray array];
+        
+        NSDictionary *dic = [CoreDataFromJson jsonObjectFromFileName:@"rank2"];
+        
+        NSArray *array = [dic objectForKey:@"topLists"];
+        
+        for (NSDictionary *d in array) {
+            
+            ChartsModel *model = [[ChartsModel alloc] initWithDic:d];
+            
+            [_datalist3 addObject:model];
+        }
+        
+    }
+    return _datalist3;
+
+}
+
+- (NSMutableArray *)datalist4{
+    
+    
+    if (!_datalist4) {
+        
+        _datalist4 = [NSMutableArray array];
+        
+        NSArray *array = [CoreDataFromJson jsonObjectFromFileName:@"criticism"];
+        
+        for (NSDictionary *d in array) {
+            
+            CriticismModel *model = [[CriticismModel alloc] initWithDic:d];
+            
+            [_datalist4 addObject:model];
+        }
+        
+    }
+    return _datalist4;
+    
+}
+
+- (void)setUpView{
     
     NewsView *newsView = [[NewsView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     
@@ -89,7 +210,36 @@
     
     [self.view addSubview:_newsView];
     
+    
+    NoticeView *noticeView = [[NoticeView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    
+    noticeView.datalist = self.datalist2;
+    
+    _noticeView = noticeView;
+    
+    [self.view addSubview:_noticeView];
+
+    ChartsView *chartsView = [[ChartsView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    
+    chartsView.dataList = self.datalist3;
+    
+    _chartsView = chartsView;
+    
+    [self.view addSubview:_chartsView];
+
+    CommentView *commentView = [[CommentView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    
+    commentView.dataList = self.datalist4;
+    
+    _commentView = commentView;
+    
+    [self.view addSubview:_commentView];
+
+
+    [self.view bringSubviewToFront:_newsView];
+    
 }
+
 
 
 @end
